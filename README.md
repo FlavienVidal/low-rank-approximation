@@ -14,3 +14,10 @@ Singular Value Decomposition is a matrix decomposition method that leads to a lo
 
 ## Non-negative Matrix Factorization (NMF)
 Given a non-negative n × m matrix V, find non-negative matrix factors W and H such that: V ≈ WH with W ∈ Rn×r and H ∈ Rr×m. To find this approximation we must define first a cost function that quantifies the quality of the approx- imation; the reconstruction error.
+
+
+## Results
+
+![true_image.png](true_image.png)
+
+![law_rank_approx_results.png](law_rank_approx_results.png)
