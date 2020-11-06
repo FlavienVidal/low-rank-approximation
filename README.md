@@ -11,6 +11,8 @@ Many Machine Learning problems involve a large number of features and it is ofte
 
 Luckily, it is often possible to reduce the number of features considerably! For example, considering logo images: the pixels on the image borders are almost always white, so we could completely drop these pixels from the training set without losing much information. Moreover, two neighboring pixels are often highly correlated: merging them into a single pixel won't result in. too much not loss of information.
 
+Dimensionality reduction is particularily conveninent in many computer vision applications. Indeed, even a tiny 100x100 pixel grayscale image has 10,000 dimensions and a megapixel image has in the millions!
+
 
 ## The Curse of Dimensionality
 
@@ -44,3 +46,11 @@ We create the PCA, SVD, NMF and MDS functions that calculate low rank approximat
 ![law_rank_approx_results.png](law_rank_approx_results.png)
 
 
+
+
+
+
+
+Principal Component Analysis (PCA ) is a useful technique for dimensionality reduction and is optimal in the sense that it represents the variability of the training data with as few dimensions as possible. Even a tiny 100x100 pixel grayscale image has 10,000 dimensions, and can be considered a point in a 10,000 dimensional space. A megapixel image has dimensions in the millions. With such high dimensionality, it is no surprise that dimensionality reduction comes handy in many computer vision applications. The projection matrix resulting from PCA can be seen as a change of coordinates to a coordinate system where the coordinates are in descending order of importance.
+To apply PCA on image data, the images need to be converted to a one-dimensional vector representation, for example using NumPy’s flatten() method.
+The flattened images are collected in a single matrix by stacking them, one row for each image. The rows are then centered relative to the mean image before the computation of the dominant directions. To find the principal components, singular value decomposition (SVD) is usually used, but if the dimensionality is high, there is a useful trick that can be used instead since the SVD computation will be very slow in that case. Here is what it looks like in code.
