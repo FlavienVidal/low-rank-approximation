@@ -30,9 +30,9 @@ we will be working with images, where each pixel is encoded by four values, name
 
 #### Singular Value Decomposition (SVD)
 > Singular Value Decomposition is a matrix decomposition method that leads to a low-dimensional representation of a high-dimensional matrix. Let A be a m × n matrix. Then the Singular Value Decom- position of matrix A is defined as: A = UΣVT, where:
-* U : m × m matrix has as columns the eigenvectors of AAT
-* Σ : m × n is a diagonal matrix with the singular values of A in the diagonal (= square roots of AAT eigenvalues)
-* V : n × n matrix has as columns the eigenvectors of ATA
+> * U : m × m matrix has as columns the eigenvectors of AAT
+> * Σ : m × n is a diagonal matrix with the singular values of A in the diagonal (= square roots of AAT eigenvalues)
+> * V : n × n matrix has as columns the eigenvectors of ATA
 
 #### Non-negative Matrix Factorization (NMF)
 > Given a non-negative n × m matrix V, find non-negative matrix factors W and H such that: V ≈ WH with W ∈ Rn×r and H ∈ Rr×m. To find this approximation we must define first a cost function that quantifies the quality of the approx- imation; the reconstruction error.
