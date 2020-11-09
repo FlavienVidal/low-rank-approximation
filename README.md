@@ -14,10 +14,17 @@ Luckily, it is often possible to reduce the number of features considerably! For
 Dimensionality reduction is particularily conveninent in many computer vision applications. Indeed, even a tiny 100x100 pixel grayscale image has 10,000 dimensions and a megapixel image has in the millions!
 
 
+
 ## The Curse of Dimensionality
-This problem is often referred to as the curse of dimensionality.
-High dimensional datasets are at risk of being very sparse: training example are far away from each other. New instances will likely be far away from any training instance making predictions much less reliable than in lower dimensions. The more dimensions the training set has, the greater the risk of overfitting it.
-As we increase the dimensionality, the density of the data in the space is decreasing exponentially to the dimension. In order to maintain the same density we would need to increase exponentially the number of data points.
+The problem described in the previous paragraph is often referred to as the curse of dimensionality.
+High dimensional datasets are at risk of being very sparse. When the dimensionality increases, the volume of the space increases and the available data become sparse. This sparsity is problematic for any method requiring statistical significance: training examples being far away from each other, new instances will likely be far away from any training instance making predictions much less reliable than in lower dimensions.
+Moreover, data tend to gather in extremely small areas of the multidimensional space. This is called the empty space phenomena.
+Thus, **high dimensional datasets prevent common techniques from being efficient**: the more dimensions the training set has, the greater the risk of overfitting it.
+As we increase the dimensionality, the density of the data in the space is decreasing exponentially to the dimension. 
+Theoritically, one solution could be to increase the amount of data in order to maintain a proper density. But to do so, we would need to increase exponentially the number of data points.
+
+![curse_of_dimensionality.png](curse_of_dimensionality.png)
+
 
 
 ## Project
