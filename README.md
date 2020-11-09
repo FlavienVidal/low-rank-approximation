@@ -28,11 +28,14 @@ Theoritically, one solution could be to increase the amount of data in order to 
 </p>
 
 On this example we have 20 data points in 3 different spaces. The density are as follow:
-* for the 1-dimensional space: ρ=20/20=1
-* for the 2-dimensional space: ρ=20/(20*20)=0.05
+* for the 1-dimensional space: ρ=20/20=1                          
+* for the 2-dimensional space: ρ=20/(20<sup>2</sup>)=0.05
 * for the 3-dimensional space: ρ=20/(20<sup>3</sup>)=0.0025
 
-
+1-dimensional space | 2-dimensional space | 3-dimensional space
+------------ | ------------- | ------------- 
+ρ=20/20=1 | ρ=20/(20<sup>2</sup>)=0.05 | ρ=20/(20<sup>3</sup>)=0.0025
+The data are somehow distributed evenly | Adding 1 dimension results in decreasing the data density by 20 | Adding 2 dimensions results in decreasing the data density by 400
 
 
 ## Project
