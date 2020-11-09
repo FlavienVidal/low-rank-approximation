@@ -41,7 +41,7 @@ we will be working with images, where each pixel is encoded by four values, name
 
 ## Results
 The image we will be working with iis the following one:
-![true_image.png](true_image.png)
+![true_image_google_logo.png](true_image_google_logo.png)
 
 We create the PCA, SVD, NMF and MDS functions that calculate low rank approximations of the input image with 4 channels and apply them to produce low rank approximation images of the google logo for k equals 1, 5, 10, 30 and 60. Here are the results: 
 ![law_rank_approx_results.png](law_rank_approx_results.png)
