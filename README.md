@@ -15,8 +15,9 @@ Dimensionality reduction is particularily conveninent in many computer vision ap
 
 
 ## The Curse of Dimensionality
-
-This problem of ... is often referred to as the curse of dimensionality.
+This problem is often referred to as the curse of dimensionality.
+High dimensional datasets are at risk of being very sparse: training example are far away from each other. New instances will likely be far away from any training instance making predictions much less reliable than in lower dimensions. The more dimensions the training set has, the greater the risk of overfitting it.
+As we increase the dimensionality, the density of the data in the space is decreasing exponentially to the dimension. In order to maintain the same density we would need to increase exponentially the number of data points.
 
 
 ## Project
