@@ -24,13 +24,7 @@ As we increase the dimensionality, the density of the data in the space is decre
 Theoritically, one solution could be to increase the amount of data in order to maintain a proper density. But to do so, we would need to increase exponentially the number of data points.
 
 <p align="center">
-  ![curse_of_dimensionality.png](curse_of_dimensionality.png)
-</p>
-
-![curse_of_dimensionality.png](curse_of_dimensionality.png)
-
-<p align="center">
-  <img width="460" height="300" src="curse_of_dimensionality.png">
+  <img src="curse_of_dimensionality.png">
 </p>
 
 ## Project
